@@ -1,0 +1,33 @@
+
+th, td {
+    white-space: nowrap;
+}
+.div_tabela{
+    overflow-y: scroll;
+    max-height: 39vh;
+}
+
+.div_tabela::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.div_tabela::-webkit-scrollbar-track {
+    background: rgb(201, 199, 199);
+    
+}
+
+.div_tabela::-webkit-scrollbar-thumb {
+    background: rgb(156, 155, 155);
+    
+}
+
+.div_tabela::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 137, 137);
+    
+}
+
+.div_tabela::-webkit-scrollbar-thumb:active {
+    background: rgb(134, 134, 134);
+    
+}
