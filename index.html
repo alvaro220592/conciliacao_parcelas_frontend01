@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <style>
+        th, td {
+            white-space: nowrap;
+        }
+        .div_tabela{
+            overflow-y: scroll;
+            max-height: 41vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" style="height: 100vh; width: 98%;">
+        <div class="row" style="height: 50%;">
+            <div class="col-md-6" style="background-color: #fdd25e;">
+                
+                <div class="row">
+                    <div class="col-md-5">
+                        <label class="btn btn-outline-dark form-control">
+                            Insira um arquivo
+                            <input type="file" style="display: none;" id="input" onchange="processar_retorno()">
+                        </label>
+                    </div>
+
+                    <div class="col-md-3" style="padding-top: 10px">
+                        <span id="nome_arquivo" class="">
+                            <!-- Preenchido via JS -->
+                        </span>
+                    </div>
+                    <div class="col-md-4">
+                        <button style="display: none" type="button" id="btn_conciliar" class="btn btn-outline-dark form-control" onclick="conciliar_parcelas()">Conciliar</button>
+                    </div>
+                
+                </div>
+                <div class="table-responsive div_tabela">
+                    <table class="table table-warning">
+                        <thead>
+                            <tr>
+                                <th>Nosso número</th>
+                                <th>Pago</th>
+                                <th>Data pagto.</th>
+                                <th>Observações</th>
+                                <th>Data de registro</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody_conteudo_json">
+                            <!-- Preenchido via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="col-md-6" style="background-color: #649dd3;">
+                <h3>Registros webservice</h3>                
+                
+                <div class="table-responsive div_tabela">
+                    <table class="table table-warning">
+                        <thead>
+                            <tr>
+                                <th>Nosso número</th>
+                                <th>Pago</th>
+                                <th>Data pagto.</th>
+                                <th>Observações</th>
+                                <th>Data de registro</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody_registrosWebService">
+                            <!-- Preenchido via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row" style="height: 50%;">
+            <div class="col-md-6" style="background-color: #649dd3;">
+                <h3>Boletos</h3>                
+                <div class="table-responsive div_tabela">
+                    <table class="table table-warning">
+                        <thead>
+                            <tr>
+                                <th>Nosso número</th>
+                                <th>Cod. parcela</th>
+                                <th>Data cadastro</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody_boletos">
+                            <!-- Preenchido via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6" style="background-color: #fdd25e;">
+                <h3>Parcelas</h3>
+                <div class="table-responsive div_tabela">
+                    <table class="table table-warning">
+                        <thead>
+                            <tr>
+                                <th>Cod. parcela</th>
+                                <th>Pago</th>
+                                <th>Data cadastro</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody_parcelas">
+                            <!-- Preenchido via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-content" id="modal">
+        <div class="modal-body">
+            <!-- Preenchido via JS -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+
+    <!-- JS interno -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+        "nosso_numero": 4321,
+        "flg_pago": "sim",
+        "data_pagto": "2022-07-02",
+        "obs": "Pago no banco tal",
+        "data_registro": "2022-07-02"
+    },
+    {
+        "nosso_numero": 1234,
+        "flg_pago": "sim",
+        "data_pagto": "2022-07-02",
+        "obs": "...",
+        "data_registro": "2022-07-01"
+    },
+    {
+        "nosso_numero": 2222,
+        "flg_pago": "sim",
+        "data_pagto": "2022-07-28",
+        "obs": "Pago com atraso",
+        "data_registro": "2022-07-10"
+    },
+    {
+        "nosso_numero": 3333,
+        "flg_pago": "nao",
+        "data_pagto": "",
+        "obs": "Não acusou pagto.",
+        "data_registro": "2022-07-01"
+    },
+    {
+        "nosso_numero": 9999,
+        "flg_pago": "sim",
+        "data_pagto": "2022-06-25",
+        "obs": "",
+        "data_registro": "2022-06-28"
+    }
+]
