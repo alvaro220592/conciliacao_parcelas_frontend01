@@ -16,7 +16,7 @@
         <div class="row" style="height: 50%;">
             <div class="col-md-6" style="background-color: #fdd25e;">
                 
-                <div class="row">
+                <div class="row justify-content-between">
                     <div class="col-md-5">
                         <label class="btn btn-outline-dark form-control">
                             Insira um arquivo
@@ -24,13 +24,16 @@
                         </label>
                     </div>
                     
-                    <div class="col-md-3" >
-                        <span id="nome_arquivo" class="">
+                    <!-- <div class="col-md-3" >
+                        <span id="nome_arquivo" class=""> -->
                             <!-- Preenchido via JS -->
-                        </span>
-                    </div>
+                        <!-- </span>
+                    </div> -->
                     <div class="col-md-4">
                         <button style="display: none" type="button" id="btn_conciliar" class="btn btn-outline-dark form-control" onclick="confirm_conciliar_parcelas()">Conciliar</button>
+                    </div>
+                    <div class="col-md-1">
+                        <span class="fs-3 fw-bold">01</span><br>
                     </div>
                     <span>O arquivo json simula os dados externos recebidos pela API</span>
                 
@@ -55,7 +58,15 @@
 
 
             <div class="col-md-6 quadro" style="background-color: #649dd3;">
-                <span class="fs-3">Registros webservice</span><br>
+                <div class="row justify-content-between">
+                    <div class="col-md-11">
+                        <span class="fs-3">Registros webservice</span>
+                    </div>
+
+                    <div class="col-md-1">
+                        <span class="fs-3 fw-bold">02</span><br>
+                    </div>
+                </div>
                 <span>Dados externos salvos no banco de dados após a conciliação</span>
                 <div class="table-responsive div_tabela">
                     <table class="table table-warning">
@@ -78,7 +89,15 @@
         </div>
         <div class="row" style="height: 50%;">
             <div class="col-md-6 quadro" style="background-color: #649dd3;">
-                <span class="fs-3">Boletos no sistema</span><br>
+                <div class="row justify-content-between">
+                    <div class="col-md-11">
+                        <span class="fs-3">Boletos no sistema</span>
+                    </div>
+
+                    <div class="col-md-1">
+                        <span class="fs-3 fw-bold">03</span><br>
+                    </div>
+                </div>
                 <span>Cada um combinará com um dado de "nosso número" igual</span>
                 <div class="table-responsive div_tabela">
                     <table class="table table-warning">
@@ -96,7 +115,15 @@
                 </div>
             </div>
             <div class="col-md-6 quadro" style="background-color: #fdd25e;">
-                <span class="fs-3">Parcelas no sistema</span><br>
+                <div class="row justify-content-between">
+                    <div class="col-md-11">
+                        <span class="fs-3">Parcelas no sistema</span>
+                    </div>
+
+                    <div class="col-md-1">
+                        <span class="fs-3 fw-bold">04</span><br>
+                    </div>
+                </div>
                 <span>Cada uma será conciliada se o respectivo dado estiver como pago.</span>
                 <div class="table-responsive div_tabela">
                     <table class="table table-warning">

@@ -5,7 +5,7 @@ mostrar_parcelas()
 function processar_retorno() {
     var arquivo = document.getElementById("input").files[0];
 
-    document.getElementById("nome_arquivo").innerHTML = arquivo.name;
+    // document.getElementById("nome_arquivo").innerHTML = arquivo.name;
 
     document.getElementById('btn_conciliar').style.display = 'block';
 
